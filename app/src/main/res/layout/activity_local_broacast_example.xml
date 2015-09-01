@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.andridlearning.amit_gupta.broadcastrecieverexample.LocalBroacastExampleActivity">
+
+    <TextView android:text="Local Broadcast Example using LocalBroadcastManager.getInstance(context).sendBroadcast(intent) and activties sendBroadCast(intent) methods. The intents for broadast are sent withing the the app process." android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send BroadCast with LocalBroadcastManager"
+        android:id="@+id/button2"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendBroadcast" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broadcast for Receiver defined in Manifest"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendBroadcast2" />
+
+</RelativeLayout>
