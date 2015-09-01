@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
         AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP,(1000 * 3), pendingIntent);
 
-        Toast.makeText(this,"Message would be broadcasted via alarm in 3 sec", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Message would be Broadcasted via alarm in 3 sec", Toast.LENGTH_SHORT).show();
 
     }
 
